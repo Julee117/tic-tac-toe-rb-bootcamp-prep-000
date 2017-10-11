@@ -56,5 +56,5 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? { |spot| spot.empty? }
+  board.none? { |spot| spot == " " }
 end

@@ -66,3 +66,8 @@ end
 def over?(board)
   won?(board) || draw?(board)
 end
+
+def winner(board)
+  win_combo = won?(board)
+  win_combo.first
+end
